@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile{
+    width: 100%;
+  min-height: 100vh;
+  background: url('../images/home.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+.profile-container {
+    margin: 50px auto;
+    padding: 18px;
+    max-width: 600px;
+    background-color: #e5e0e0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    /* height: 350; */
+    
+}
+.profile-container h1{
+    text-align: center;
+    color: black;
+}
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-details p strong {
+    color: #555;
+}

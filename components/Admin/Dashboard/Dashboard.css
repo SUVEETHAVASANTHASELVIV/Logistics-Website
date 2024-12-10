@@ -1,0 +1,265 @@
+/* Global Styles */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* overflow: hidden; Prevent horizontal scrolling */
+  }
+  /* Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    height: 100%;
+    /* overflow: hidden; Prevent container overflow */
+  }
+  /* Main Content Area */
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* overflow: hidden; Prevent main content overflow */
+  }
+  
+  /* Dashboard Section */
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%;
+  }
+  
+  /* Card Component */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(40% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Card Icon */
+  .card-icon {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  
+  /* Card Info */
+  .card-info {
+    flex: 1;
+    text-align: right;
+    color: black;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 18px;
+    color: #6c5ce7;
+  }
+  
+  /* Card Value */
+  .card-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Charts Section */
+  .charts {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .chart-container h2{
+    color: black;
+  }
+
+  /* Chart Canvas */
+  .chart-container canvas {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Extra Content Section */
+  .extra-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  /* Common styles for extra content sections */
+  .extra-content section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Ensure a consistent bottom margin */
+  }
+  /* Specific styles for Inventory Stock and Orders Shipping Today */
+  .inventory-stock, .orders-shipping-today {
+    width: 100%; /* Ensure both sections take the full width */
+    padding: 20px;
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the sections */
+  }
+  /* Section Titles */
+  .extra-content h2 {
+    margin-top: 0;
+    color: #6c5ce7;
+    text-align: center; /* Center-align titles for consistency */
+  }
+  /* Orders Shipping Today Component */
+  .orders-shipping-today table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  .orders-shipping-today th, .orders-shipping-today td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: black;
+  }
+  .orders-shipping-today th {
+    background-color: #f4f4f4;
+  }
+  .orders-shipping-today .status {
+    color: green;
+    font-weight: bold;
+  }
+  /* Inventory Stock Component */
+  .inventory-stock canvas {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  /* Extra Content Section Items */
+  .extra-content section {
+    flex: 1 1 calc(50% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* Section Titles */
+  .extra-content h2 {
+    margin-top: 0;
+    color: #6c5ce7;
+  }
+  /* List Styles for Extra Content */
+  .top-cities ul,
+  .best-sellers ul,
+  .orders ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* List Items */
+  .top-cities li,
+  .best-sellers li,
+  .orders li {
+    margin-bottom: 10px;
+  }
+  /* Statistics Section */
+  .statistics div {
+    margin-bottom: 10px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .charts {
+      flex-direction: column;
+    }
+    .chart-container {
+      height: 300px;
+      width: 100%; /* Ensure chart container is full width on small screens */
+    }
+    .extra-content {
+      flex-direction: column;
+    }
+  
+    .extra-content section {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* Statistics Component */
+  .statistics {
+    padding: 30px;
+    /* align-items: center; */
+  }
+  
+  .statistics .stats-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .statistics .stats-card {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .statistics .stats-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c5ce7;
+  }
+  
+  .statistics .stats-label {
+    font-size: 14px;
+    color: #555;
+  }
+  .stats-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .stats-card {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    color: white;
+  }
+  
+  .stats-number {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .stats-label {
+    font-size: 1.2em;
+  }

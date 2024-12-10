@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Details Container */
+.details-container {
+    display: flex;
+    height: 100%;
+}
+
+/* Details Content */
+.details-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* User Dashboard */
+.user-dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%;
+}
+
+/* User Status Section */
+.user-status {
+    flex: 1;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-status h2 {
+    margin-top: 0;
+    color: #6c5ce7;
+}
+
+.user-status .chart-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.user-status ul {
+    list-style-type: none; /* Remove list dots */
+    padding-left: 0; /* Remove default padding */
+}
+
+/* User Table Section */
+.user-table {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.user-table h2 {
+    margin-top: 0;
+    color: #6c5ce7;
+    text-align: center;
+}
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #cacaca;
+    padding: 8px;
+    text-align: left;
+    color: black;
+}
+
+.user-table th {
+    background-color: #e6e3e3;
+}
+
+.user-table input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.user-table .add-user-btn, .user-table .save-btn, .user-table .edit-btn, .user-table .delete-btn {
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px; /* Add space between buttons */
+}
+
+.user-table .add-user-btn:hover, .user-table .save-btn:hover, .user-table .edit-btn:hover, .user-table .delete-btn:hover {
+    background-color: #5a4dbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .user-dashboard {
+        flex-direction: column;
+    }
+
+    .user-status, .user-table {
+        margin: 10px 0;
+    }
+}

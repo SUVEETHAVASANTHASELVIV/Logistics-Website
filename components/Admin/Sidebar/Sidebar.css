@@ -1,0 +1,113 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    width: 230px;
+    height: 93vh;
+    background-color: #2d3748;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-info .username {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .menu, .charts-sidebar {
+    margin-bottom: 20px;
+  }
+  
+  .menu h2, .charts-sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .menu ul, .charts-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li, .charts-sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .menu ul li:hover, .charts-sidebar ul li:hover {
+    background-color: #4a5568;
+  }
+  
+  .menu ul li svg, .charts-sidebar ul li svg {
+    margin-right: 10px;
+  }
+  
+  
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-text {
+    display: flex;
+    align-items: center;
+  }
+  .submenu {
+    list-style: none;
+    padding: 0;
+    background-color: #4a5568;
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    left:200px; /* Align submenu to the right of the sidebar */
+    width: 200px;
+  }
+  .menu-item.open .submenu {
+    display: block;
+  }
+  .menu-item .order a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .submenu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .submenu ul li:hover {
+    background-color: #f2f4f7;
+  }
+  .submenu li svg {
+    margin-right: 10px;
+  }
+  .charts-sidebar {
+    flex-grow: 1;
+  }
+  .charts-sidebar ul {
+    margin-top: auto;
+  }

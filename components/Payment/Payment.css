@@ -1,0 +1,240 @@
+/* .payment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hero-section1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-section1 h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hero-section1 p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.payment-summary {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+}
+
+.payment-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.summary-item {
+  margin-bottom: 15px;
+}
+
+.summary-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.summary-item ul li{
+  color: black;
+}
+
+.payment-summary select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.payment-summary p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-form {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.payment-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card-details-form {
+  margin-top: 20px;
+}
+
+.card-details-form .MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+.card-details-form .MuiButton-root {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.cta-section1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-button1 {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-button1:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: #28a745; 
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+} */
+body {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.payment-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border-top: 5px solid #007bff;
+}
+
+.payment-form {
+  width: 100%;
+}
+
+.payment-form .MuiGrid-item {
+  margin-bottom: 20px;
+}
+
+.card-details-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: linear-gradient(145deg, #f5f5f5, #eaeaea);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.payment-button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 20px -8px rgba(0, 123, 255, 0.6);
+}
+
+.payment-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 15px 25px -8px rgba(0, 86, 179, 0.8);
+}
+
+.MuiTextField-root {
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+.MuiInputBase-input {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.MuiInputLabel-root {
+  font-weight: 500;
+  color: #555;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #007bff;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #007bff;
+}
+
+.MuiFormLabel-root {
+  font-size: 0.9rem;
+}
+
+.MuiFormControl-root {
+  margin-top: 16px;
+}
+
+.modal-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .payment-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .payment-button {
+    padding: 12px 0;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+
+  .card-details-box {
+    padding: 15px;
+  }
+}
